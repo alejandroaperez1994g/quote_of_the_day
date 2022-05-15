@@ -20,7 +20,9 @@ const playMusic = () => {
 };
 
 window.onload = function () {
-  playMusic();
+  setTimeout(() => {
+    playMusic();
+  }, 1000);
 };
 
 const onLoad = () => {
