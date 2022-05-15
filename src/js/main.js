@@ -1,12 +1,21 @@
-import { fetchQuoteEnglish, translateToSpanish } from "./api.js";
+import { setQuoteEnglish, setQuoteSpanish } from "./quote.js";
+import { getCurrentTime, updateCurrentTime } from "./time.js";
 
-let quoteSpanish = fetchQuoteEnglish();
+const spanishSelector = document.getElementById("spanish-selector");
+const englishSelector = document.getElementById("english-selector");
 
-quoteSpanish.then((data) => {
-  console.log(data);
-  console.log(data.contents.quotes[0].author);
-  console.log(data.contents.quotes[0].quote);
-  translateToSpanish(data.contents.quotes[0].quote).then((data) => {
-    console.log(data.data.translatedText);
-  });
+spanishSelector.addEventListener("click", () => {
+  setQuoteSpanish();
+  updateCurrentTime("es");
 });
+englishSelector.addEventListener("click", () => {
+  setQuoteEnglish();
+  updateCurrentTime("en");
+});
+
+const onLoad = () => {
+  setQuoteEnglish();
+  updateCurrentTime("en");
+};
+
+onLoad();
