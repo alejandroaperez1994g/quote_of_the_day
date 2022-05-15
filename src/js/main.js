@@ -3,6 +3,7 @@ import { getCurrentTime, updateCurrentTime } from "./time.js";
 
 const spanishSelector = document.getElementById("spanish-selector");
 const englishSelector = document.getElementById("english-selector");
+const main_container = document.getElementById("main");
 
 spanishSelector.addEventListener("click", () => {
   setQuoteSpanish();
@@ -16,14 +17,15 @@ englishSelector.addEventListener("click", () => {
 const playMusic = () => {
   const audio = document.getElementById("motivational-audio");
   audio.play();
-  console.log("audio");
 };
 
-window.onload = function () {
-  setTimeout(() => {
+main_container.addEventListener(
+  "mouseover",
+  () => {
     playMusic();
-  }, 1000);
-};
+  },
+  { once: true }
+);
 
 const onLoad = () => {
   setQuoteEnglish();
