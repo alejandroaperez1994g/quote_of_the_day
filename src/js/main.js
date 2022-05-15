@@ -13,9 +13,16 @@ englishSelector.addEventListener("click", () => {
   updateCurrentTime("en");
 });
 
+const playMusic = () => {
+  const audio = document.getElementById("motivational-audio");
+  audio.play();
+  console.log("audio");
+};
+
 const onLoad = () => {
   setQuoteEnglish();
   updateCurrentTime("en");
+  playMusic();
 };
 
 onLoad();
