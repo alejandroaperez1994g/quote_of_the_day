@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&display=swap");
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./calendar.css");
+@import url("./quote.css");
+
+:root {
+  --font-family: "Nunito", sans-serif;
+  --primary-color: #f9ebc8;
+  --secondary-color: #fefbe7;
+  --tertiary-color: #dae5d0;
+  --quaternary-color: #a0bcc2;
+  --white: #fff;
+  --black: #000;
+}
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 385px;
+  height: 530px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+}

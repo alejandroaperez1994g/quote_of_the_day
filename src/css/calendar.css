@@ -1,0 +1,25 @@
+.calendar__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  background-image: url("../assets/img/icons8-calendar-400\ 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+
+.calendar__month {
+  color: var(--white);
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+.calendar__day {
+  position: relative;
+  bottom: 4rem;
+  color: var(--black);
+  font-size: 12rem;
+  font-weight: 500;
+}

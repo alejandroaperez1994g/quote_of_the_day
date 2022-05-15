@@ -1,0 +1,19 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 80%;
+  max-height: 30%;
+}
+
+.quote__phrase {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.quote__author {
+  width: 100%;
+  text-align: end;
+}

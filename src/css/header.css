@@ -1,0 +1,13 @@
+.language__selector {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 80%;
+}
+.dropdown-selector:hover {
+  cursor: pointer;
+}
+.language {
+  height: 30px;
+}
