@@ -22,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: var(--primary-color);
+  background: var(--primary-color) !important;
 }
 
 main {
@@ -31,7 +31,7 @@ main {
   justify-content: space-around;
   align-items: center;
   width: 385px;
-  height: 530px;
+  height: 575px;
   background: var(--secondary-color);
   border-radius: 10px;
 }

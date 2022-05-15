@@ -14,11 +14,12 @@
 .calendar__month {
   color: var(--white);
   font-size: 4.5rem;
+  margin-top: 0.5rem;
   font-weight: 500;
 }
 .calendar__day {
   position: relative;
-  bottom: 4rem;
+  bottom: 5rem;
   color: var(--black);
   font-size: 12rem;
   font-weight: 500;
