@@ -19,10 +19,13 @@ const playMusic = () => {
   console.log("audio");
 };
 
+window.onload = function () {
+  playMusic();
+};
+
 const onLoad = () => {
   setQuoteEnglish();
   updateCurrentTime("en");
-  playMusic();
 };
 
 onLoad();
